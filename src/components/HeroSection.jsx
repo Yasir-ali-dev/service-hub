@@ -1,13 +1,13 @@
-import { Form, Input, Select, Space, Tooltip, Typography } from 'antd'
-import { Option } from 'antd/es/mentions'
+import { Form, Input, Select, } from 'antd';
+import { Option } from 'antd/es/mentions';
 import React from 'react'
-import { Button, Col, Row } from 'react-bootstrap'
-import Wave from './Wave'
+import { Button, Col, Row } from 'react-bootstrap';
+import Wave from './Wave';
 
 const HeroSection = () => {
   return (
     <>
-    <Row>
+    <Row id='home'>
         <Col  className='d-flex  justify-content-center align-items-center flex-column' >
         <h4 className='py-2' style={{textAlign:"left"}}>Place Your</h4>
         <h1 className='pb-3' style={{textAlign:"left"}}>ORDER NOW !!</h1>

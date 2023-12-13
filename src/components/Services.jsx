@@ -1,7 +1,9 @@
 import React from 'react'
 import { Container } from 'react-bootstrap';
-
+import { Link } from 'react-router-dom';
 const images=["ac service.webp","carpenter.webp","furniture.webp","generator.webp","painter.webp","mason.webp"];
+const services=["AC Technician","Carpenter","Carpenter","Painter","Generator","Mason"];
+
 
 const Services = () => {
   return (
@@ -14,9 +16,11 @@ const Services = () => {
        {
            images.map((_,index)=>{
                return(
-                <div key={index} className='mx-2'>
-                  <img src={_} width={"80%"} alt='_image'></img>  
-                </div>
+                <Link to={`/services`}>
+                  <div key={index} className='mx-2'>
+                    <img src={_} width={"80%"} alt='_image'></img>  
+                  </div>
+                </Link>
             )
         })
         } 
